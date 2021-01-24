@@ -1,10 +1,15 @@
 # Saliency-detection
 Saliency detection in pixel level is a segementation task of finding most important objects in the image. Different CNNs for saliency detection are in this respitory. The code in this respitory has been completed in the time span of my masters, so it is not a production code and all parts might not be consistant. 
 different approaches to tackle the saliency detection task has been implemented here all based on convolutional neural networks, the main goal of the project was making a CNN that is accurate and at the same time light weight that can be used on medium processors of commercial robots. The implemented approaches are as follows:
+
   DNSD : it is simple U-net architecture without using any pretrained weights.
+  
   Incp-DNSD : it is U-net that uses inception-like layers at the downsampling part of network without using any pretrained weights.
+  
   Res-DNSD : it is U-net using residual layers without using any pretrained weights.
+  
   Atrous-net : fully convolutional architecture which consists of a encoder and decoder part. This network uses Pyramid pooling as described in Deeplab 3.
+  
 Saliency detection in pixel level using CNN with dilated convolutions
 it is a Tensorflow class of a convolutional neural network for saliency detection task in pixel level.
 The designed network has fully convolutional architecture which consists of a encoder and decoder part. This network uses Pyramid pooling as described in Deeplab 3.
